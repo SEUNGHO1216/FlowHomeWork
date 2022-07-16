@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flow Test</title>
+    <!--jquery cdn-->
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+<body>
+    <div>
+        <h1 class="title">◉ 파일 확장자 차단</h1>
+    </div>
+
+    <div class="explain-sentence">파일 확장자에 따라 특정 형식의 파일을 첨부하거나 전송하지 못히도록 제한</div>
+
+    <div class="flex-box">
+        <div class="word-title">고정확장자</div>
+        <div id="check-list"></div>
+    </div>
+
+    <div class="flex-box flex-custom-box">
+        <div class="word-title">커스텀확장자</div>
+        <input type="text" id="custom-extension" placeholder="확장자 입력">
+        <button onclick="save()" id="">추가</button>
+    </div>
+
+    <div  class="flex-box">
+        <div class="word-title"></div><!--custom-box 부분의 위치를 상단과 맞춰주기 위한 공간 차지용 div-->
+        <div id="custom-box"></div>
+    </div>
+</body>
+</html>

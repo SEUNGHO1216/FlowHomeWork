@@ -1,0 +1,47 @@
+.title{
+    width: 500px;
+    border-bottom: 2px black solid;
+}
+.explain-sentence{
+    margin: 20px 0px;
+}
+.flex-box{
+    display: flex;
+    margin-bottom: 20px;
+}
+.flex-custom-box{
+    margin-bottom: 5px;
+}
+.checkbox{
+    margin-right: 10px;
+}
+.count-extension{
+    margin: 6px;
+    font-size: 12px;
+    color: gray;
+}
+#custom-box{
+    width: 300px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 4px;
+    overflow: auto;
+}
+#custom-extension{
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+#word-box{
+    float: left;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 3px;
+    margin: 3px;
+}
+.word-space{
+    margin-right: 5px;
+}
+.word-title{
+    width: 100px;
+}
