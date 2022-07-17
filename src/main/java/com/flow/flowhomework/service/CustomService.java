@@ -71,8 +71,11 @@ public class CustomService {
     private ResponseEntity<Object> exception(String extension){
         if(fixRepository.existsByFixExtension(extension) || customRepository.existsByCustomExtension(extension)){
             return ResponseEntity.status(400).body("이미 입력된 확장자입니다");
+            /*
+            컨트롤러 전역의 예외를 처리하는 클래스에서 반환타입을 에러메시지만(상태코드 같이 x) 반환하도록 설정 시 아래 코드도 가능
+            throw new IllegalArgumentException("이미 입력된 확장자");
+            */
         }
-        //예외처리
         if(extension.length()>20){
             return ResponseEntity.status(400).body("확장자는 20자 이하로 작성해야합니다");
         }
